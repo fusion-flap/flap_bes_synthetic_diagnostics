@@ -11,7 +11,10 @@ except ImportError:
 class RenateSignal(object):
     def __init__(self, path=''):
         self.renate_data = scipy.io.readsav(path)
+        self.path = path
 
+    def flap_from_sav(self):
+        pass
 
 """
 def DataObject_from_1D_RENATEsav(path,exp_id='',data_title=''):
